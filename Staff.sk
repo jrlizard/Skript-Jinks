@@ -15,12 +15,12 @@ command /staff:
 			loop-player has permission "obam.admin"
 			add loop-player to {_staffonline::admin}
 			
-		if size of {_staffonline::*} is 0:
+		size of {_staffonline::*} is 0:
 			send "&f----&6Current Staff Online&F----"
 			send " "
 			send "&4There is currently no Staff online."
 			
-		else if size of {_staffonline::*} is greater than 0:
+		size of {_staffonline::*} is greater than 0:
 			
 			send "&f----&6Current Staff Online&F----"
 			send " "
